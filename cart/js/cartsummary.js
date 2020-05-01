@@ -17,7 +17,17 @@ $(document).ready(function() {
       value++;
       input.val(value);
     })
-  $('.CartRemovalSec').click(function(){
-        $('.prodInfo').parent().remove();
+    $('.CartRemovalSec').click(function(){
+      $(this).parentsUntil('.summaryContainer').parent().remove();
      });
   });
+  $('.headerSearchIcon').click(function(){
+    if($('.searchInputBlock:visible').is(':visible')){
+        $('.searchInputBlock').animate({ width:'0' },600,function(){$('.searchInputBlock').hide(); });
+    }
+    else{
+         $('.searchInputBlock').show();
+         $('.searchInputBlock').animate({ width:'210px' },600);
+    }
+    setTimeout(function(){$(".header-search-input").focus();},300);
+ });
