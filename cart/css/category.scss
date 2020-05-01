@@ -52,8 +52,14 @@
     }
 } 
 @media (max-width: 480px) {
-    .header__content{padding: 10px 16px 20px !important;}
-    .container-fluid{padding:0px;margin-top:65px;
+    .header{height:60px !important;}
+    .header__content{padding: 10px 5px 10px 20px !important;
+        &--BrandStore{margin-top: 6px !important;}
+        .rightNav{
+            li{margin-right:10px !important;}
+        }
+    }
+    .container-fluid{padding:0px;margin-top:60px;
         .CategoryBlkContainer{
             .CategoryBlkSec{ 
                 &__leftnav{display:none !important;}
@@ -79,8 +85,41 @@
             } 
         }
     }
-}
-    .CategoryBlkSec__leftnav{display:none;}
+    #SortModal{
+        .modal-content{border-radius: 0;
+         border-bottom: 0;
+         box-shadow: none;}
+         .modal-footer{border-top: 0;
+            box-shadow: none;}
+        .SortBlk{padding:0px;margin-left: 30px;
+         li{padding:0 5px;list-style:none;color:#ccc;margin:5px 0px 13px 0px; 
+             line-height:22px;position:relative;
+             a{font-weight:normal ;color:#000;
+                 span{margin-right:20px;font-size:13px;}
+                 .SecLight{font-family:opensans-light;transition: .4s ease all;width: 16px;height: 16px;border: 1px solid #555;
+                         content: "";display: inline-block;margin: 3px;position: absolute;left: -14%;
+                         cursor: pointer;
+                         border-radius: 50%;
+                         padding: 3px;}
+                 .filterSec{}
+             }
+              a.active{font-weight:bold;color:#2874f0;text-decoration:none;}
+            a{ &.active{
+                .SecLight{background:#fff;border: 1px solid #2874f0;}
+                .selected{content: '';
+                 display: inline-block;
+                 width: 7px;
+                 height: 10px;
+                 border: 5px solid #2874f0;
+                 position: absolute;top: 6px;left: -11%;border-radius: 50%;
+                 }
+             }
+            } 
+         }
+        }
+         
+   }
+   .CategoryBlkSec__leftnav{display:none;}
     #filterModal{
         .priceSlider{
             input{border:0;background:transparent;font-weight:bold;}
@@ -91,12 +130,9 @@
             }
         } 
     }
-   #SortModal{
-       .SortBlk{padding:0px;
-        li{list-style:none;}
-       }
-        
-  }
+}
+    
+   
 
 
 
