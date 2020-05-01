@@ -1,9 +1,338 @@
-{
-    "version": 3,
-    "mappings": "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",
-    "sources": [
-        "summary.scss"
-    ],
-    "names": [],
-    "file": "summary.css"
+.container-fluid {
+  margin-top: 70px;
+  background-color: #f7f7f7;
+  height: 100%;
 }
+
+.container-fluid .CartSummaryBlk .CartSummaryBlkSec {
+  min-height: 500px;
+  margin: 0px;
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-fluid .CartSummaryBlk .CartSummaryBlkSec .tr-inr:before {
+  content: "\20B9";
+}
+
+.container-fluid .CartSummaryBlk .CartSummaryBlkSec__leftnav {
+  margin-top: 20px;
+}
+
+.container-fluid .CartSummaryBlk .CartSummaryBlkSec__leftnav .summaryContainer {
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.container-fluid .CartSummaryBlk .CartSummaryBlkSec__leftnav .summaryContainer .prodInfo {
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+  padding: 0px;
+}
+
+.container-fluid .CartSummaryBlk .CartSummaryBlkSec__leftnav .summaryContainer .prodInfo .prodc {
+  float: left;
+  padding: 0;
+}
+
+.container-fluid .CartSummaryBlk .CartSummaryBlkSec__leftnav .summaryContainer .prodInfo .prodImg img {
+  width: 125px;
+}
+
+.container-fluid .CartSummaryBlk .CartSummaryBlkSec__leftnav .summaryContainer .prodInfo .ProductDestailsSec {
+  padding: 15px;
+}
+
+.container-fluid .CartSummaryBlk .CartSummaryBlkSec__leftnav .summaryContainer .prodInfo .ProductDestailsSec .productPriceBlk {
+  margin-top: 20px;
+}
+
+.container-fluid .CartSummaryBlk .CartSummaryBlkSec__leftnav .summaryContainer .prodInfo .ProductDestailsSec .productPriceBlk .sellingPrice {
+  color: #000;
+  font-weight: bold;
+}
+
+.container-fluid .CartSummaryBlk .CartSummaryBlkSec__leftnav .summaryContainer .prodInfo .ProductDestailsSec .productPriceBlk .actualPrice {
+  text-decoration: line-through;
+  padding-right: 5px;
+  color: #999;
+}
+
+.container-fluid .CartSummaryBlk .CartSummaryBlkSec__leftnav .summaryContainer .prodInfo .ProductDestailsSec .productPriceBlk .discountLabel {
+  color: green;
+}
+
+.container-fluid .CartSummaryBlk .CartSummaryBlkSec__leftnav .summaryContainer .prodInfo .SizeQty-Sec {
+  padding: 15px;
+  margin-top: 40px;
+}
+
+.container-fluid .CartSummaryBlk .CartSummaryBlkSec__leftnav .summaryContainer .prodInfo .SizeQty-Sec .Quantitycontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-fluid .CartSummaryBlk .CartSummaryBlkSec__leftnav .summaryContainer .prodInfo .SizeQty-Sec .Quantitycontainer .quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+
+.container-fluid .CartSummaryBlk .CartSummaryBlkSec__leftnav .summaryContainer .prodInfo .SizeQty-Sec .Quantitycontainer .quantity a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid #928e8e;
+  background: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  line-height: 22px;
+  font-size: 27px;
+}
+
+.container-fluid .CartSummaryBlk .CartSummaryBlkSec__leftnav .summaryContainer .prodInfo .SizeQty-Sec .Quantitycontainer .quantity a:hover {
+  background: #575b71;
+  color: #fff;
+}
+
+.container-fluid .CartSummaryBlk .CartSummaryBlkSec__leftnav .summaryContainer .prodInfo .SizeQty-Sec .Quantitycontainer .quantity .quantity__plus {
+  right: 30px;
+}
+
+.container-fluid .CartSummaryBlk .CartSummaryBlkSec__leftnav .summaryContainer .prodInfo .SizeQty-Sec .Quantitycontainer .quantity .quantity__minus {
+  left: 30px;
+}
+
+.container-fluid .CartSummaryBlk .CartSummaryBlkSec__leftnav .summaryContainer .prodInfo .SizeQty-Sec .Quantitycontainer .quantity .quantity__input {
+  width: 35px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: #fff;
+  color: #8184a1;
+  border: 2px solid #928e8e;
+}
+
+.container-fluid .CartSummaryBlk .CartSummaryBlkSec__leftnav .summaryContainer .prodInfo .prodRemove {
+  padding: 15px;
+  margin-top: 40px;
+}
+
+.container-fluid .CartSummaryBlk .CartSummaryBlkSec__leftnav .summaryContainer .prodInfo .prodRemove .CartRemovalSec {
+  color: #000;
+}
+
+.container-fluid .CartSummaryBlk .CartSummaryBlkSec__leftnav .summaryContainer .prodInfo .prodRemove .CartRemovalSec:hover {
+  text-decoration: none;
+}
+
+.container-fluid .CartSummaryBlk .CartSummaryBlkSec__leftnav .summaryContainer .prodInfo .cartorderDetails {
+  display: none;
+}
+
+.container-fluid .CartSummaryBlk .CartSummaryBlkSec__rightnav {
+  margin-top: 20px;
+}
+
+.container-fluid .CartSummaryBlk .CartSummaryBlkSec__rightnav .summaryDetails {
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  background-color: #fff;
+}
+
+.container-fluid .CartSummaryBlk .CartSummaryBlkSec__rightnav h3 {
+  border-bottom: 1px solid #000;
+  padding: 15px;
+  font-size: 20px;
+  margin: 0;
+}
+
+.container-fluid .CartSummaryBlk .CartSummaryBlkSec__rightnav .detailedBlk {
+  padding: 15px 0px;
+  border-bottom: 1px solid #000;
+}
+
+.container-fluid .CartSummaryBlk .CartSummaryBlkSec__rightnav p {
+  padding: 15px;
+  margin: 0;
+  line-height: 4px;
+}
+
+.container-fluid .CartSummaryBlk .CartSummaryBlkSec__rightnav .leftDetail {
+  float: left;
+}
+
+.container-fluid .CartSummaryBlk .CartSummaryBlkSec__rightnav .rightDetail {
+  float: right;
+}
+
+.container-fluid .CartSummaryBlk .CartSummaryBlkSec__rightnav .totalSummary {
+  padding: 15px 0px;
+}
+
+.cartSec {
+  display: none !important;
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 60px !important;
+  }
+  .header__content {
+    padding: 10px 5px 10px 20px !important;
+  }
+  .header__content--BrandStore {
+    margin-top: 6px !important;
+  }
+  .header__content .cartSec {
+    display: none !important;
+  }
+  .container-fluid {
+    margin-bottom: 40px;
+    margin-top: 75px;
+    overflow-y: scroll;
+    padding: 0;
+  }
+  .container-fluid .CartSummaryBlkSec {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    display: inline-block !important;
+  }
+  .container-fluid .CartSummaryBlkSec__leftnav {
+    padding: 0 5px;
+    margin-top: 0 !important;
+  }
+  .container-fluid .CartSummaryBlkSec__rightnav {
+    padding: 0 5px;
+  }
+  .container-fluid .CartSummaryBlkSec .prodInfo {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .container-fluid .ProductDestailsSec, .container-fluid .SizeQty-Sec, .container-fluid .prodRemove {
+    display: none;
+  }
+  .container-fluid .cartorderDetails {
+    padding-left: 20px;
+    display: block !important;
+  }
+  .container-fluid .cartorderDetails .productPriceBlk {
+    letter-spacing: 0.5px;
+  }
+  .container-fluid .cartorderDetails .productPriceBlk .sellingPrice {
+    color: #000;
+    font-weight: bold;
+  }
+  .container-fluid .cartorderDetails .productPriceBlk .actualPrice {
+    text-decoration: line-through;
+    padding-right: 5px;
+    color: #999;
+  }
+  .container-fluid .cartorderDetails .productPriceBlk .discountLabel {
+    color: green;
+  }
+  .container-fluid .cartorderDetails .CartRemovalSec {
+    color: #000;
+  }
+  .container-fluid .cartorderDetails .CartRemovalSec:hover {
+    text-decoration: none;
+  }
+  .container-fluid .cartorderDetails .summarySizeQty-Sec {
+    padding: 10px;
+    margin-left: 20px;
+  }
+  .container-fluid .cartorderDetails .summarySizeQty-Sec .Quantitycontainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .container-fluid .cartorderDetails .summarySizeQty-Sec .Quantitycontainer .quantity {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 0;
+  }
+  .container-fluid .cartorderDetails .summarySizeQty-Sec .Quantitycontainer .quantity a {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid #928e8e;
+    background: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 18px;
+    font-size: 20px;
+  }
+  .container-fluid .cartorderDetails .summarySizeQty-Sec .Quantitycontainer .quantity a:hover {
+    background: #575b71;
+    color: #fff;
+  }
+  .container-fluid .cartorderDetails .summarySizeQty-Sec .Quantitycontainer .quantity .quantity__plus {
+    right: 47%;
+  }
+  .container-fluid .cartorderDetails .summarySizeQty-Sec .Quantitycontainer .quantity .quantity__minus {
+    left: 8%;
+  }
+  .container-fluid .cartorderDetails .summarySizeQty-Sec .Quantitycontainer .quantity .quantity__input {
+    width: 30px;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #fff;
+    color: #8184a1;
+    border: 2px solid #928e8e;
+  }
+}
+/*# sourceMappingURL=summary.css.map */
