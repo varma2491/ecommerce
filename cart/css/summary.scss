@@ -61,12 +61,18 @@
         }
     }
 }
-
+.cartSec{display:none !important;}
 
 @media (max-width: 480px) {
+    .header{height:60px !important;}
+    .header__content{padding: 10px 5px 10px 20px !important;
+        &--BrandStore{margin-top: 6px !important;}
+        .cartSec{display: none!important;}
+    }
     .container-fluid{margin-bottom:40px;margin-top:75px;overflow-y:scroll;padding:0;
    .CartSummaryBlkSec{ flex-flow:column;display:inline-block !important;
-        &__leftnav{padding:0;margin-top:0 !important;}
+        &__leftnav{padding:0 5px;margin-top:0 !important;}
+        &__rightnav{padding:0 5px}
         .prodInfo{display:flex !important;}
     }
    .ProductDestailsSec, .SizeQty-Sec, .prodRemove{display:none;}
@@ -83,24 +89,14 @@
         .summarySizeQty-Sec{padding: 10px;margin-left: 20px;
             .Quantitycontainer{display: flex;width: 100%; flex-direction: column;justify-content: flex-start;align-items: flex-start;
                 .quantity {display: flex;align-items: flex-start;justify-content: flex-start;padding: 0;
-                    a{display: block;
-                        width: 24px;
-                        height: 24px;
-                        margin: 0;
-                        position: absolute;
-                        border-radius: 50%;
-                        border: 1px solid #928e8e;
-                        background: #ffffff;
-                        text-decoration: none;
-                        text-align: center;
-                        line-height: 18px;
-                        font-size: 20px;
+                    a{display: block;width: 24px;height: 24px;margin: 0;position: absolute;border-radius: 50%;border: 1px solid #928e8e;
+                        background: #ffffff;text-decoration: none;text-align: center;line-height: 18px;font-size: 20px;
                         &:hover{
                             background: #575b71;color: #fff;
                         }
                        
                     }
-                    .quantity__plus{right:53%;}
+                    .quantity__plus{right:47%;}
                     .quantity__minus{left:8%;}
                         .quantity__input {
                             width: 30px;height: 25px;margin: 0;padding: 0;text-align: center;
