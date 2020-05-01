@@ -1,5 +1,6 @@
 $(document).ready(function() {
     $('.SortBlk li').on("click",function(){
+      $('.SortBlk li a').removeClass('active');
         $(this).find('a').toggleClass('active');
     });
 
@@ -39,3 +40,17 @@ $( function() {
     $( "#amount2" ).val( "Rs" + $( "#slider-range2" ).slider( "values", 0 ) +
       " - Rs" + $( "#slider-range2" ).slider( "values", 1 ) );
   } );
+  $('.headerSearchIcon').click(function(){
+    if($('.searchInputBlock:visible').is(':visible')){
+        $('.searchInputBlock').animate({ width:'0' },600,function(){$('.searchInputBlock').hide(); });
+    }
+    else{
+         $('.searchInputBlock').show();
+         $('.searchInputBlock').animate({ width:'210px' },600);
+    }
+    setTimeout(function(){$(".header-search-input").focus();},300);
+ });
+
+ $('.sortBy__list .SortBlk li').on("click",function(){
+  $(this).find('a').toggleClass('active');
+});
