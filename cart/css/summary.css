@@ -198,7 +198,23 @@
   padding: 15px 0px;
 }
 
+.cartSec {
+  display: none !important;
+}
+
 @media (max-width: 480px) {
+  .header {
+    height: 60px !important;
+  }
+  .header__content {
+    padding: 10px 5px 10px 20px !important;
+  }
+  .header__content--BrandStore {
+    margin-top: 6px !important;
+  }
+  .header__content .cartSec {
+    display: none !important;
+  }
   .container-fluid {
     margin-bottom: 40px;
     margin-top: 75px;
@@ -213,8 +229,11 @@
     display: inline-block !important;
   }
   .container-fluid .CartSummaryBlkSec__leftnav {
-    padding: 0;
+    padding: 0 5px;
     margin-top: 0 !important;
+  }
+  .container-fluid .CartSummaryBlkSec__rightnav {
+    padding: 0 5px;
   }
   .container-fluid .CartSummaryBlkSec .prodInfo {
     display: -webkit-box !important;
@@ -300,7 +319,7 @@
     color: #fff;
   }
   .container-fluid .cartorderDetails .summarySizeQty-Sec .Quantitycontainer .quantity .quantity__plus {
-    right: 53%;
+    right: 47%;
   }
   .container-fluid .cartorderDetails .summarySizeQty-Sec .Quantitycontainer .quantity .quantity__minus {
     left: 8%;
