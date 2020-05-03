@@ -112,6 +112,7 @@
 
 .container-fluid .CategoryBlkContainer .CategoryBlkSec__rightnav--productListSec .product_cat_view .productBlock__info .productInfoDetaills .productPriceBlk {
   margin: 0;
+  font-size: 12px;
 }
 
 .container-fluid .CategoryBlkContainer .CategoryBlkSec__rightnav--productListSec .product_cat_view .productBlock__info .productInfoDetaills .productPriceBlk .tr-inr:before {
