@@ -1,13 +1,39 @@
+var cart = [];
+function refreshCart(){
+      var localCart = localStorage.getItem('cart');
+      if(localCart) {
+            cart = JSON.parse(localCart);
+            if(cart){
+                  $(".bagcount").text(cart.length);
+            }
+      }
+}
+
 $(document).ready(function() {
     $('.SortBlk li').on("click",function(){
       $('.SortBlk li a').removeClass('active');
         $(this).find('a').toggleClass('active');
     });
 
-    var counts = 0;
+    var counts = cart.length;
     $(".cartBtn").click(function () {
-        counts += +1;
-        $(".bag-count").animate({
+      refreshCart();
+      var found = false;
+      var itemId = $(this).attr('data-id'); 
+      $.each(cart, function(i, v){
+            if(v.id ==  itemId) {
+                  v.quantity++;
+                  found = true;
+            }
+      });
+
+      if(found == false){
+            cart.push( { id: $(this).attr('data-id'), quantity: 1} );
+            counts += +1;
+      }
+      localStorage.setItem('cart',  JSON.stringify(cart));
+        
+        $(".bagcount").animate({
         opacity: 1
                 }, 300, function () {
         $(this).text(counts);
