@@ -48,7 +48,7 @@ body {
   height: 38px;
 }
 
-.header__content--links .rightNav li .bag-count {
+.header__content--links .rightNav li .bagcount {
   width: 15px;
   height: 15px;
   line-height: 15px;
@@ -110,6 +110,10 @@ body {
   outline: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.header__content--links .rightNav .searchSec .searchInputBlock .header-search-input:placeholder {
+  color: #fff;
 }
 
 .priceSlider input {
