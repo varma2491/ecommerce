@@ -66,8 +66,9 @@
                         <h3>Sort By</h3>
                         <ul class="SortBlk">
                             <li class=""><a href="javascript:void(0);" class="active" value="HighttoLow">Price -- High Low</a></li>
-                            <li class=""><a href="javascript:void(0);" value="LowtoHigh">Price -- Low High</a></li>
-                            <li class=""><a href="javascript:void(0);" value="discount">Discount</a></li>
+                            <li class=""><a href="javascript:void(0);" value="LowtoHigh" onCllick="PriceActualSort(actual)">Price -- Low High</a></li>
+ 
+                            <li class=""><a href="javascript:void(0);" value="discount" onCllick="DiscountSort(discount)">Discount</a></li>
                         </ul>
                     </div>
                     <div class="CategoryBlkSec__rightnav--MobSortSec clearfix" style="display:none;">
@@ -161,10 +162,21 @@
 <script>
     $(document).ready(function(){
      $.each(items.items,function(index,value){
-        $(".CategoryBlkSec__rightnav--productListSec").append('<div class="col-sm-6 text-center product_cat_view"><div class="productBlock"><div class="productBlock__img"><a class="" href=""><img alt="" src="'+value.image+'" title="" class=""></a></div><div class="productBlock__info"><div class="productInfoDetaills"><p class="productNameLabel">'+value.name+'</p><p class="productPriceBlk"><span class="sellingPrice"><i class="tr tr-inr"></i>'+value.price.display+'</span><span class="actualPrice">'+value.price.actual+'</span><span class="discountLabel">'+value.discount+'%off</span></p></div><button class="cartBtn" data-id='+value.id+'>Add to Cart</button></div></div></div>');
+        $(".CategoryBlkSec__rightnav--productListSec").append('<div class="col-sm-6 text-center product_cat_view"><div class="productBlock"><div class="productBlock__img"><a class="" href=""><img alt="" src="'+value.image+'" title="" class=""></a></div><div class="productBlock__info"><div class="productInfoDetaills"><p class="productNameLabel">'+value.name+'</p><p class="productPriceBlk"><span class="sellingPrice"><i class="tr tr-inr"></i>'+value.price.actual+'</span><span class="actualPrice">'+value.price.display+'</span><span class="discountLabel">'+value.discount+'%off</span></p></div><button class="cartBtn" data-id='+value.id+'>Add to Cart</button></div></div></div>');
      });
  });
 
+ var DiscountSort = items.items.sort(function (a, b) {
+  return a.discount - b.discount;
+});
+
+var PriceDisplaySort = items.items.sort(function (a, b) {
+  return a.price.display - b.price.display;
+});
+
+var PriceActualSort = items.items.sort(function (a, b) {
+  return a.price.actual - b.price.actual;
+});
 
  </script>
 <script type="text/javascript" src="js/category.js"></script>
